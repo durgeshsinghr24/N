@@ -1,0 +1,75 @@
+/* CSS code */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.packages-section {
+  font-family: 'Nunito', sans-serif;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+.packages-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.packages-slider {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.package-card {
+  width: 25%;
+  min-width: 300px;
+  padding: 10px;
+}
+
+.package-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.package-info {
+  text-align: center;
+}
+
+.packages-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.prev-btn,
+.next-btn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.packages-dots {
+  display: flex;
+  margin: 0 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: white;
+}
